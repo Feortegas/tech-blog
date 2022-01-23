@@ -11,20 +11,38 @@
 </head>
 
 <body>
-    <div class="wrapper">
-        <header>
-            <h1>
-                <a href="/">Tech Blog</a>
-            </h1>
-            <nav>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="/">Tech Blog</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
                 {{#if loggedIn}}
-                <a href="/dashboard">dashboard</a>
-                <button id="logout" class="btn-no-style">logout</button>
+                <li class="nav-item">
+                    <a class="nav-link" href="/dashboard">Dashboard</a>
+                </li>
+                <li class="nav-item">
+                    {{!-- <a class="nav-link" href="#">Logout</a> --}}
+                    <button id="logout" class="nav-link">Logout</button>
+                </li>
                 {{else}}
-                <a href="/login">login</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="/login">Login</a>
+                </li>
                 {{/if}}
-            </nav>
-        </header>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <div class="wrapper">
         <main>
             {{{ body }}}
         </main>
