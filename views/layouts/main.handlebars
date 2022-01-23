@@ -22,27 +22,26 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 {{#if loggedIn}}
-                <li class="nav-item">
-                    <a class="nav-link" href="/dashboard">Dashboard</a>
-                </li>
-                <li class="nav-item">
-                    {{!-- <a class="nav-link" href="#">Logout</a> --}}
-                    <button id="logout" class="nav-link">Logout</button>
-                </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/dashboard">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <button id="logout" class="nav-link">Logout</button>
+                    </li>
                 {{else}}
-                <li class="nav-item">
-                    <a class="nav-link" href="/login">Login</a>
-                </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/login">Login</a>
+                    </li>
                 {{/if}}
             </ul>
-            <form class="form-inline my-2 my-lg-0">
+            {{!-- <form class="form-inline my-2 my-lg-0">
                 <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
                 <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
+            </form> --}}
         </div>
     </nav>
 
-    <div class="wrapper">
+    <div class="wrapper p-3">
         <main>
             {{{ body }}}
         </main>
@@ -61,7 +60,7 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
     {{#if loggedIn}}
-    <script src="/javascript/logout.js"></script>
+        <script src="/javascript/logout.js"></script>
     {{/if}}
 </body>
 
