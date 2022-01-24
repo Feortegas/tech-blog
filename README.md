@@ -1,9 +1,39 @@
 # tech-blog
 
-
 ## Description
 
+Tech Blog messagin board website. A perfect place for you Tech lover to read about what other Tech lovers are thinking and share your 2 cents on it!
+
+## Features (v1)
+
+- User Login
+- User - Post owner can Create / Edit / Delete a Post (Title / Description (optional))
+- User can add/delete comment to post
+
 ## Technology
+- HTML
+- CSS
+- Bootstrap and icons
+- JavaScript
+- MySQL
+- Sequelize
+- Node.js
+- Express.js
+- Handlebars.js
+- Heroku
+
+
+## Application links (Heroku)
+
+To-do
+
+## Contributors
+- Fernando Ortega
+
+
+## Licensing
+
+None
 
 ## User Story
 
