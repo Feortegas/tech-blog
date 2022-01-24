@@ -4,6 +4,8 @@
 
 Tech Blog messagin board website. A perfect place for you Tech lover to read about what other Tech lovers are thinking and share your 2 cents on it!
 
+Heroku deployed link: https://rocky-meadow-18948.herokuapp.com
+
 ## Features (v1)
 
 - User Login
